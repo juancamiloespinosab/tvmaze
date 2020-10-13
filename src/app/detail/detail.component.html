@@ -1,0 +1,13 @@
+<div class="detail" *ngIf="showDetail">
+    <div class="detail-container">
+
+        <h2 class="detail-container__key"> Titulo: <span class="detail-container__value">{{ showDetail.name }}</span>
+        </h2>
+        <h2 class="detail-container__key"> Tipo: <span class="detail-container__value">{{ showDetail.type }}</span>
+        </h2>
+        <h2 class="detail-container__key"> Lenguaje: <span
+                class="detail-container__value">{{ showDetail.language }}</span>
+        </h2>
+        <button class="detail-container__close-button" (click)="closePopUp()">Cerrar</button>
+    </div>
+</div>

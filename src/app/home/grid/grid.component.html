@@ -1,0 +1,7 @@
+<div (click)="goToDetail(show.id)" class="card-container" *ngFor="let show of showsList">
+    <div class="card" [style.backgroundImage]="getImage(show.image)">
+        <div class="card__title">
+            <h3>{{ show.name }}</h3>
+        </div>
+    </div>
+</div>

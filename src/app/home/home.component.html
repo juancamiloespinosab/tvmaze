@@ -1,0 +1,15 @@
+<main class="app-container">
+    <div class="app">
+        <header class="header">
+            <h1 class="header__title">TV MAZE</h1>
+        </header>
+
+        <div class="search-box">
+            <app-search-box class="search-box-container" (searchEvent)="createShowsList($event)"></app-search-box>
+        </div>
+
+        <div class="grid">
+            <app-grid class="grid-container" [showsList]="showsList"></app-grid>
+        </div> 
+    </div>
+</main>

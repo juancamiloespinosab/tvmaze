@@ -1,0 +1,7 @@
+<form class="search-form" form (submit)="searchShow()" [formGroup]="searchForm">
+    <h2 class="search-form__title">Buscar show:</h2>
+    <div class="search-form__text-and-button">
+        <input class="search-form__text" type="text" formControlName="keywords">
+        <input class="search-form__button" type="submit" value="Buscar">
+    </div>
+</form>
