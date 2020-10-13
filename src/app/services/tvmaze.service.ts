@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class TvmazeService {
 
   private API_URL: string = 'http://api.tvmaze.com';
+  private PROXY: string = 'https://cors-anywhere.herokuapp.com'
 
   constructor(private http: HttpClient) { }
 
@@ -17,7 +18,7 @@ export class TvmazeService {
   }
 
   getShowDetail(showId) {
-    let uri = `https://cors-anywhere.herokuapp.com/${this.API_URL}/shows/${showId}`;
+    let uri = `${this.PROXY}/${this.API_URL}/shows/${showId}`;
 
     return this.httpRequest(uri);
   }
